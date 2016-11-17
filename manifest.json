@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Youtube media keys",
+  "description": "Control youtube videos with the keyboard media keys",
+  "version": "1.0",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "tabs", "https://www.youtube.com/watch?*"
+  ],
+  "commands": {
+    "play-youtube": {
+      "suggested_key": {
+        "default": "MediaPlayPause"
+      },
+      "description": "Play or pause the video",
+      "global": true
+    },
+    "next-youtube": {
+      "suggested_key": {
+        "default": "MediaNextTrack"
+      },
+      "description": "Next video",
+      "global": true
+    }
+  }
+}
